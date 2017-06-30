@@ -3,8 +3,8 @@
 <section class="section">
   <div class="row">
     <div class="col-lg-4 edit-form ">
-        <img class="edit-image" ng-src="{{ studentsEdit.student.image }}">
-      <form ng-submit="studentsEdit.create()" name="studentsEdit.studentForm" novalidate>
+      <img class="edit-image" ng-src="{{ studentsEdit.student.image }}">
+      <form ng-submit="studentsEdit.update()" name="studentsEdit.studentForm" novalidate>
         <div class="field">
           <p class="control">
             <label  for="image">Image</label>
@@ -23,9 +23,6 @@
             <div ng-message="required" class="notification">Image is required.</div>
           </div>
         </div>
-
-
-
         <div class="field">
           <p class="control">
             <label  for="gitHub">Github</label>
@@ -35,11 +32,15 @@
             <div ng-message="required" class="notification">Github account is required.</div>
           </div>
         </div>
-
         <div class="field">
           <p class="control">
             <input type="submit" class="button is-primary is-fullwidth" value="Update">
           </p>
+        </div>
+        <h3> {{studentsEdit.student}}</h3>
+        <h1>here: {{ googleMap.setMarker }}</h1>
+        <div id="map">
+          <google-map center="studentsEdit.student.location"></google-map>
         </div>
       </form>
 

@@ -156,6 +156,8 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     color: black;
+    width: 900px;
+    margin-bot: 50px;
 
 }
 .edit-image {
@@ -168,4 +170,11 @@ body {
     border-radius: 10px;
     color: black;
 
+}
+.map {
+  width: 500px;
+  height: 500px;
+  background-color: ghostwhite;
+
+  float: right;
 }
