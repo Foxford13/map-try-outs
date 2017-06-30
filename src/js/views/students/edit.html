@@ -1,0 +1,48 @@
+<h1>Edit</h1>
+
+<section class="section">
+  <div class="row">
+    <div class="col-lg-4 edit-form ">
+        <img class="edit-image" ng-src="{{ studentsEdit.student.image }}">
+      <form ng-submit="studentsEdit.create()" name="studentsEdit.studentForm" novalidate>
+        <div class="field">
+          <p class="control">
+            <label  for="image">Image</label>
+          </p>
+          <input type="text" class="input" id="image" name="image" ng-model="studentsEdit.student.image" required>
+          <div ng-messages="studentsEdit.studentForm.image.$error" ng-show="studentsEdit.studentForm.$submitted || studentsEdit.studentForm.image.$touched">
+            <div ng-message="required" class="notification">Name is required.</div>
+          </div>
+        </div>
+        <div class="field">
+          <p class="control">
+            <label  for="name">Name</label>
+          </p>
+          <input type="text" class="input" id="name" name="name" ng-model="studentsEdit.student.name" required>
+          <div ng-messages="studentsEdit.studentForm.name.$error" ng-show="studentsEdit.studentForm.$submitted || studentsEdit.studentForm.name.$touched">
+            <div ng-message="required" class="notification">Image is required.</div>
+          </div>
+        </div>
+
+
+
+        <div class="field">
+          <p class="control">
+            <label  for="gitHub">Github</label>
+          </p>
+          <input type="text" class="input" id="gitHub" name="gitHub" ng-model="studentsEdit.student.gitHub" required>
+          <div ng-messages="studentsEdit.studentForm.gitHub.$error" ng-show="studentsEdit.studentForm.$submitted || studentsEdit.studentForm.gitHub.$touched">
+            <div ng-message="required" class="notification">Github account is required.</div>
+          </div>
+        </div>
+
+        <div class="field">
+          <p class="control">
+            <input type="submit" class="button is-primary is-fullwidth" value="Update">
+          </p>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<h1>Index</h1>
+
+<section class="section">
+  <div class="row">
+    <div class="col-lg-offset-1 col-lg-11">
+
+      <div ng-repeat="student in studentsIndex.all" class="col-lg-2  col-md-4 col-sm-6 students-index">
+        <img ng-src="{{ student.image }}" class="index-img">
+        <h2 class="title">{{ student.name }}</h2>
+        <h2 class="title"><a href="{{ studentsShow.student.gitHub }}">{{ studentsShow.student.gitHub }}</a></h2>
+
+        <button class="button is-small" ui-sref="studentsShow({ id: student.id })">View</button>
+      </div>
+    </div>
+
+</div>
+
+</section>

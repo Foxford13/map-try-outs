@@ -1,0 +1,171 @@
+* {
+font-family: 'Amatic SC', cursive;
+}
+
+#loader{
+    max-width: 800px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#loader img{
+    width: 20%;
+}
+
+
+.index-img {
+  max-width: 150px;
+}
+body {
+  color: white;
+}
+
+.nav-menu {
+  height: 50px;
+  background-color: rgba(10, 20, 100, 1);
+  padding-left: 25px;
+  padding-right: 25px;
+
+  li {
+    display: inline;
+    a{
+      color: white;
+      font-size: 35px;
+      margin-left: 5px;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    a:hover {
+      color: rgba(10, 20, 100, 0.8);
+      background-color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  #login, #register, #logout {
+    float: right;
+  }
+}
+.login-form {
+  margin-top: 30px;
+  text-align: center;
+  background: rgba(10, 20, 100, 0.5);
+  padding-bottom: 30px;
+  padding-top: 15px;
+
+  border-radius: 10px;
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    margin: 0 auto;
+  }
+  .field {
+    margin-bottom: 15px;
+  }
+  .field-top {
+    margin-top: 50px;
+  }
+  .button {
+    margin-top: 5px;
+    background-color: white;
+    border: none;
+  }
+
+}
+body {
+  &.studentsIndex {
+    background: url('https://static.tumblr.com/0394772c53252a115d2d59bfb50189b2/xkebfr2/jkbmzgus8/tumblr_static_space_cat_huge.jpg');
+        // background-size: cover;
+
+  }
+  &.studentsShow {
+    background: url('http://i.imgur.com/haemyRg.jpg');
+  }
+  &.login {
+    color: black;
+        background: url('https://s-media-cache-ak0.pinimg.com/originals/92/fc/f0/92fcf040a57792395f148dfb553cd18b.jpg');
+  }
+  &.register {
+    color: black;
+            background: url('https://i.imgur.com/tEOUW07.jpg');
+                background-size: cover;
+  }
+  &.studentsEdit {
+    background: url('http://i2.ruliweb.com/img/5/5/D/B/55DB1CBA42476D0016');
+        background-size: cover;
+
+
+  }
+  &.studentsNew {
+
+    background: url('http://i2.ruliweb.com/img/5/5/D/B/55DB1CBA42476D0016');
+    background-size: cover;
+  }
+
+}
+
+
+.show-image {
+  max-width: 300px;
+}
+
+.students-index {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  height: 390px;
+  .button {
+    background-color: rgba(10, 20, 100, 0.8);
+    border-color: white;
+    width: 100%;
+    position: absolute;
+    bottom:   0;
+    left: 0;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+.show-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  color: black;
+}
+.register-form {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  color: black;
+
+}
+
+.edit-form {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: black;
+
+}
+.edit-image {
+  float: right;
+  max-width: 120px;
+  margin: 20px 20px 0 0;
+}
+.new-form {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: black;
+
+}

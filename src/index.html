@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="yearbookApp">
+<head>
+  <base href="/">
+  <title>Yearbook App</title>
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+<body ng-controller="MainCtrl as main" ng-class="main.pageName">
+  <div id="loader" ng-if="::false">
+  <img src="https://s31.postimg.org/l7bx9ahbv/dance1.gif">
+  <img src="https://s31.postimg.org/c23lws95n/dance2.gif">
+  <img src="https://s32.postimg.org/acplpp1bp/dance3.gif">
+  <img src="https://s31.postimg.org/i70b5htiz/dance4.gif">
+</div>
+  <nav class="nav">
+    <div class="nav-menu" ng-class="{ 'is-active': menuIsOpen }">
+
+      <li><a ui-sref="studentsIndex">Students</a></li>
+      <li ng-if="main.isAuthenticated()"><a ui-sref="studentsNew">Add a student</a></li>
+      <li ng-if="!main.isAuthenticated()" id="login"><a ui-sref="login">Login</a></li>
+      <li ng-if="!main.isAuthenticated()" id="register"><a ui-sref="register">Register</a></li>
+      <li ng-if="main.isAuthenticated()" id="logout"><a  ng-click="main.logout()">Logout</a></li>
+    </div>
+  </nav>
+  <main class="container" ui-view ng-controller="MainCtrl as main"></main>
+</body>
+</html>

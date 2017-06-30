@@ -1,0 +1,45 @@
+<h1>new</h1>
+<section class="section">
+  <div class="row">
+    <div class="new-form col-lg-4">
+      <form ng-submit="studentsNew.create()" name="studentsNew.studentForm" novalidate>
+        <div class="field">
+          <p class="control">
+            <label  for="image">Image</label>
+          </p>
+          <input type="text" class="input" id="image" name="image" ng-model="studentsNew.student.image" required>
+          <div ng-messages="studentsNew.studentForm.image.$error" ng-show="studentsNew.studentForm.$submitted || studentsNew.studentForm.image.$touched">
+            <div ng-message="required" class="notification">Name is required.</div>
+          </div>
+        </div>
+        <div class="field">
+          <p class="control">
+            <label  for="name">Name</label>
+          </p>
+          <input type="text" class="input" id="name" name="name" ng-model="studentsNew.student.name" required>
+          <div ng-messages="studentsNew.studentForm.name.$error" ng-show="studentsNew.studentForm.$submitted || studentsNew.studentForm.name.$touched">
+            <div ng-message="required" class="notification">Image is required.</div>
+          </div>
+        </div>
+
+
+
+        <div class="field">
+          <p class="control">
+            <label  for="gitHub">Github</label>
+          </p>
+          <input type="text" class="input" id="gitHub" name="gitHub" ng-model="studentsNew.student.gitHub" required>
+          <div ng-messages="studentsNew.studentForm.gitHub.$error" ng-show="studentsNew.studentForm.$submitted || studentsNew.studentForm.gitHub.$touched">
+            <div ng-message="required" class="notification">Github account is required.</div>
+          </div>
+        </div>
+
+        <div class="field">
+          <p class="control">
+            <input type="submit" class="button is-primary is-fullwidth" value="Add">
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
